@@ -1,0 +1,144 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* common classes */
+.asBtn {
+  background-color: #8f023d;
+  color: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.asBtn:hover {
+  background-color: #bb4e7b;
+  color: white;
+}
+.aboutSubTitle {
+  text-decoration: underline;
+}
+/* ----HEADER---- */
+
+#asLogo {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+#asHeader {
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  border-bottom: #8f023d 1px solid;
+  box-sizing: border-box;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+.titleBtn {
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  float: right;
+}
+
+/* ------ WHY ACORNS DIV ------ */
+
+#asPictureDiv {
+  margin: auto;
+  height: 100%;
+
+  /* box-sizing: border-box;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  background: #fff; */
+}
+#asPicture {
+  width: 100%;
+}
+#aboutTitle {
+  margin-top: 10px;
+}
+#aboutDiv {
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  height: 100%;
+  overflow-y: scroll;
+  margin-bottom: 30px;
+}
+.checkImg {
+  width: 25px;
+}
+#about {
+  height: 100%;
+}
+
+/* ----------- Products ----------- */
+
+.stairliftDiv {
+  background-color: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+
+#productsTitle {
+  color: white;
+  width: 100%;
+  height: 500px;
+  background-image: url("../images/stairlift-01.png");
+}
+
+#productsDiv {
+  height: 650px;
+  background-color: whitesmoke;
+}
+#textImage {
+  margin-top: 100px;
+  padding-left: 10px;
+  font-size: 50px;
+  border-bottom: 1px white solid;
+  margin-left: 30px;
+}
+
+#quoteTitle {
+  color: #5a5a5a;
+  margin-top: 30px;
+  margin-left: 20px;
+  border-bottom: 2px solid #5a5a5a;
+}
+#quoteSubTitle {
+  color: #5a5a5a;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: small;
+}
+#contactP {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.txtQuote {
+  box-sizing: border-box;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+
+#footer {
+  background-color: #8f023d;
+  height: 100%;
+  padding: 10px;
+
+  /* border-top: 1px white solid; */
+}
+#icons {
+  text-align: center;
+}
+#i1 {
+  padding-right: 10px;
+}
+@media only screen and (max-width: 576px) {
+}
