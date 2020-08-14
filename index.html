@@ -32,10 +32,12 @@
         <img src="/images/acorn-stairlifts-logo2.png" alt="AS Logo" id="asLogo" />
       </div>
       <div class="col-lg-6 col-sm-6">
+
         <button class="btn asBtn titleBtn" id="btnGetQuoted">
           Get Quoted Now
         </button>
-        <button class="btn asBtn titleBtn" id="btnSignUp">Sign Up</button>
+        <button class="btn asBtn titleBtn" id="btnGoToSignUp">Sign Up</button>
+
       </div>
     </div>
   </div>
@@ -112,10 +114,10 @@
         </h5>
         <div class="row mt-2">
           <div class="col-6">
-            <p style="font-size: small;">
+            <p style="font-size: small;" class="ml-4">
               <img src="/images/tick-icon.png" class="checkImg" />&nbsp;Annual, scheduled service visit.
             </p>
-            <p style="font-size: small;">
+            <p style="font-size: small;" class="ml-4">
               <img src="/images/tick-icon.png" class="checkImg" />&nbsp;Replacement lift if necessary.
             </p>
           </div>
@@ -133,12 +135,17 @@
     </div>
   </div>
 
-  <!-- -------------- PRODUCTS DIV ------------- -->
+  <!-- -------------- EXCELLENCE DIV ------------- -->
 
-  <div class="container-fluid" id="productsTitle">
+  <div class="container-fluid" id="excellenceDiv">
     <div class="row">
       <div class="col-lg-12 col-sm-12 p-0">
-        <h2 id="textImage">Our Award-Winning Stairlifts</h2>
+        <h2 id="textImage">We Value Excellence</h2>
+        <ul class="asList">
+          &nbsp;<li><img src="/images/tick-icon.png" class="checkImg" />&nbsp;Annual stairlift maintenance</li>
+          &nbsp;<li><img src="/images/tick-icon.png" class="checkImg" />&nbsp;Highly-trained trusted technicians</li>
+          &nbsp;<li><img src="/images/tick-icon.png" class="checkImg" />&nbsp;Help desk 365 days a year</li>
+        </ul>
       </div>
     </div>
     <div class="row">
@@ -146,25 +153,36 @@
     </div>
   </div>
 
-  <div class="container-fluid" id="productsDiv">
+  <!-- -------------------- SQUARES DIV -------------------- -->
+
+  <div class="container-fluid" id="squaresDiv" style="background-color: whitesmoke;">
     <div class="row p-4">
-
-
-
-
-
-
-
+      <div class="col"></div>
+      <div id="serviceDiv" class="col-lg-3 col-sm-12 squaresSubDiv m-3">
+        <h5 class="squareTitles">Servicing your Stairlift</h5>
+        <p><i class="fas fa-tools"></i></p>
+      </div>
+      <div id="reviewsDiv" class="col-lg-3 col-sm-12 squaresSubDiv m-3">
+        <h5 class="squareTitles">Testimonials & Reviews</h5>
+        <i class="fas fa-award"></i>
+      </div>
+      <div id="faqDiv" class="col-lg-3 col-sm-12 squaresSubDiv m-3">
+        <h5 class="squareTitles">FAQs</h5>
+        <i class="fas fa-question-circle"></i>
+      </div>
+      <div class="col"></div>
 
     </div>
   </div>
+
+  <!-- -------------- QUOTING DIV  --------------------- -->
 
   <div class="container-fluid" id="quote">
     <div class="row">
-      <div class="col-lg-6 col-sm-12 p-0">
+      <div class="col-lg-6 col-sm-12 col-m-12 col-xl-6 p-0">
         <img src="/images/gallery-01.png" width="100%" />
       </div>
-      <div class="col-lg-6 col-sm-12" id="quoteText">
+      <div class="col-lg-6 col-sm-12 col-m-12 col-xl-6" id="quoteText">
         <h1 id="quoteTitle">Get Quoted for Free Today</h1>
         <h6 id="quoteSubTitle">
           We will contact you back in less than 48 hours
@@ -193,27 +211,33 @@
           <div class="form-group">
             <label for="txtZip">Postal Code</label>
             <input type="text" class="form-control txtQuote" id="txtZip" />
-            <small class="mt-2" id="errorLabel" style="display: none; color: red;">Please fill in all the fields</small>
+            <small class="mt-2" id="errorLabel" style="display: none; color: red;">Please fill in all the
+              fields</small>
           </div>
 
-          <button type="button" id="btnQuote" class="btn asBtn">
+          <button type="button" id="btnQuote" class="btn asBtn mb-3">
             Submit
           </button>
+
+
         </form>
       </div>
     </div>
   </div>
 
+
+  <!-- ------------------- FOOTER -------------------- -->
+
   <div class="container-fluid" id="footer">
     <div class="row">
       <div class="col-lg-4 col-sm-12"></div>
       <div class="col-lg-4 col-sm-12" id="icons">
-        <a href="https://www.linkedin.com/in/casey-beaulac-910685163/" target="_blank">
+        <a href="https://www.facebook.com/acornstairliftsuk/  " target="_blank">
           <i class="fab fa-facebook-square" style="font-size: 30px; color: white;"></i>
         </a>
-        <a href="https://github.com/caseybeaulac" target="_blank"><i class="fab fa-twitter-square pl-1 pr-1"
+        <a href="http://twitter.com/AcornStairlifts" target="_blank"><i class="fab fa-twitter-square pl-1 pr-1"
             style="font-size: 30px; color: white;"></i></a>
-        <a href="https://github.com/caseybeaulac" target="_blank">
+        <a href="" target="_blank">
           <i class="fab fa-google-plus-square" style="font-size: 30px; color: white;"></i>
         </a>
       </div>
