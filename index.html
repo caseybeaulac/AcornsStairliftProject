@@ -7,7 +7,7 @@
   <!-- CSS only -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/styles.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="app.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
@@ -22,6 +22,7 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
   <title>Welcome - Acorns Stairlift</title>
+  <link rel="icon" type="image/png" href="./assets/images/acornslogo.png">
 </head>
 
 <body>
@@ -29,7 +30,7 @@
   <div class="container-fluid" id="asHeader">
     <div class="row">
       <div class="col-lg-6 col-sm-6">
-        <img src="/images/acorn-stairlifts-logo2.png" alt="AS Logo" id="asLogo" />
+        <img src="./assets/images/acorn-stairlifts-logo2.png" alt="AS Logo" id="asLogo" />
       </div>
       <div class="col-lg-6 col-sm-6">
 
@@ -107,7 +108,7 @@
       </div>
 
       <div class="col-lg-5 col-sm-12 p-0" id="asPictureDiv">
-        <img src="/images/aspicture.png" id="asPicture" />
+        <img src="./assets/images/aspicture.png" id="asPicture" />
 
         <h5 style="margin-top: 10px; text-align: center;">
           4 Year Stairlift Cover
@@ -115,18 +116,18 @@
         <div class="row mt-2">
           <div class="col-6">
             <p style="font-size: small;" class="ml-4">
-              <img src="/images/tick-icon.png" class="checkImg" />&nbsp;Annual, scheduled service visit.
+              <img src="./assets/images/tick-icon.png" class="checkImg" />&nbsp;Annual, scheduled service visit.
             </p>
             <p style="font-size: small;" class="ml-4">
-              <img src="/images/tick-icon.png" class="checkImg" />&nbsp;Replacement lift if necessary.
+              <img src="./assets/images/tick-icon.png" class="checkImg" />&nbsp;Replacement lift if necessary.
             </p>
           </div>
           <div class="col-6">
             <p style="font-size: small;">
-              <img src="/images/tick-icon.png" class="checkImg" />&nbsp;Priority attention 365 days a year.
+              <img src="./assets/images/tick-icon.png" class="checkImg" />&nbsp;Priority attention 365 days a year.
             </p>
             <p style="font-size: small;">
-              <img src="/images/tick-icon.png" class="checkImg" />&nbsp;Parts
+              <img src="./assets/images/tick-icon.png" class="checkImg" />&nbsp;Parts
               and labour included.
             </p>
           </div>
@@ -142,9 +143,10 @@
       <div class="col-lg-12 col-sm-12 p-0">
         <h2 id="textImage">We Value Excellence</h2>
         <ul class="asList">
-          &nbsp;<li><img src="/images/tick-icon.png" class="checkImg" />&nbsp;Annual stairlift maintenance</li>
-          &nbsp;<li><img src="/images/tick-icon.png" class="checkImg" />&nbsp;Highly-trained trusted technicians</li>
-          &nbsp;<li><img src="/images/tick-icon.png" class="checkImg" />&nbsp;Help desk 365 days a year</li>
+          &nbsp;<li><img src="./assets/images/tick-icon.png" class="checkImg" />&nbsp;Annual stairlift maintenance</li>
+          &nbsp;<li><img src="./assets/images/tick-icon.png" class="checkImg" />&nbsp;Highly-trained trusted technicians
+          </li>
+          &nbsp;<li><img src="./assets/images/tick-icon.png" class="checkImg" />&nbsp;Help desk 365 days a year</li>
         </ul>
       </div>
     </div>
@@ -180,7 +182,7 @@
   <div class="container-fluid" id="quote">
     <div class="row">
       <div class="col-lg-6 col-sm-12 col-m-12 col-xl-6 p-0">
-        <img src="/images/gallery-01.png" width="100%" />
+        <img src="./assets/images/gallery-01.png" width="100%" />
       </div>
       <div class="col-lg-6 col-sm-12 col-m-12 col-xl-6" id="quoteText">
         <h1 id="quoteTitle">Get Quoted for Free Today</h1>
@@ -211,13 +213,14 @@
           <div class="form-group">
             <label for="txtZip">Postal Code</label>
             <input type="text" class="form-control txtQuote" id="txtZip" />
-            <small class="mt-2" id="errorLabel" style="display: none; color: red;">Please fill in all the
-              fields</small>
+
           </div>
 
           <button type="button" id="btnQuote" class="btn asBtn mb-3">
             Submit
-          </button>
+          </button><small id="errorLabel">Please fill
+            in all the
+            fields</small>
 
 
         </form>

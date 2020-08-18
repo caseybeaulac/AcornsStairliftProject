@@ -7,7 +7,7 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="app.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
@@ -21,7 +21,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <title>Sing Up - Acorns Stairlift</title>
+    <title>Sign Up - Acorns Stairlift</title>
+    <link rel="icon" type="image/png" href="./assets/images/acornslogo.png">
 </head>
 
 <body>
@@ -30,7 +31,7 @@
             <div class="col-lg-6 col-sm-12 col-m-12 col-xl-6 p-3" id="signupText">
                 <h1 id="signupTitle">Sign Up To Become a Member</h1>
                 <h6 id="signupSubTitle">
-                    Member will receive benefits and specials offers
+                    Members will receive benefits and specials offers
                 </h6>
                 <form class="ml-4">
                     <div class="form-group">
@@ -48,9 +49,13 @@
                     <div class="form-group">
                         <label for="txtConfirmPassword">Confirm Password</label>
                         <input type="password" class="form-control txtSignup txtPassword" id="txtConfirmPassword" />
-                        <small class="mt-2" id="errorLabel" style="display: none; color: red;">Please fill in all the
+                        <small class="mt-2" id="errorLabelSignUp" style="display: none; color: red;">Please fill in all
+                            the
                             fields</small>
                         <small class="mt-2" id="errorLabel2" style="display: none; color: red;">Passwords must match
+                        </small>
+                        <small class="mt-2" id="errorPassword" style="display: none; color: red;">Password must be at
+                            least 8 characters long
                         </small>
                     </div>
                     <button type="button" id="btnCancel" class="btn asBtn">
@@ -68,9 +73,53 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid" style="background-color: #8f023d; height: 350px; ">
+    <div class="container-fluid" id="signupFooter" style="background-color: white; height: 100%; ">
+        <div class="row">
+            <div class="col-4 col-lg-4 col-sm-12 m-2">
+                <h4>Awards&nbsp;&nbsp;<i class="fas fa-trophy" style="color: #8f023d; font-size: x-large;"></i></h4>
 
+                <p style="font-size: small;">Some of Acorn Stairlifts’ awards recognise the high quality, safety and
+                    performance of our
+                    stairlifts. Some acknowledge
+                    the way we treat our customers and staff, while others reward our ongoing success as a dynamic
+                    multi-national business.<br><br>We're proud to have earned all of them and not just because they
+                    look
+                    good in our trophy cabinet! Much more important
+                    than that, they give our customers added assurance that a range of independent organisations,
+                    government bodies and
+                    judging panels have looked long and hard at Acorn and found our products, practises and services to
+                    be exemplary.
+                </p>
+            </div>
+            <div class="col col-lg col-sm-4 divAwardsImg">
+                <img src="./assets/images/asme.jpg" class="awardsImg">
+            </div>
+            <div class="col col-lg col-sm-4 divAwardsImg">
+                <img src="./assets/images/eou-green.png" class="awardsImg">
+            </div>
+            <div class="col col-lg col-sm-4 divAwardsImg">
+                <img src="./assets/images/ul-logo-callout-img.png" class="awardsImg"> </div>
 
+        </div>
+
+    </div>
+
+    <div class="container-fluid" id="footerSignUp">
+        <div class="row">
+            <div class="col-lg-4 col-sm-12"></div>
+            <div class="col-lg-4 col-sm-12" id="icons">
+                <a href="https://www.facebook.com/acornstairliftsuk/  " target="_blank">
+                    <i class="fab fa-facebook-square" style="font-size: 30px; color: white;"></i>
+                </a>
+                <a href="http://twitter.com/AcornStairlifts" target="_blank"><i class="fab fa-twitter-square pl-1 pr-1"
+                        style="font-size: 30px; color: white;"></i></a>
+                <a href="" target="_blank">
+                    <i class="fab fa-google-plus-square" style="font-size: 30px; color: white;"></i>
+                </a>
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-sm-12"></div>
     </div>
 </body>
 

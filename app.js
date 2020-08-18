@@ -5,7 +5,7 @@ $(function () {
       if ($(this).val() == "") {
         valid = false;
         $(this).css("border-color", "red");
-        $("#errorLabel").css("display", "block");
+        $("#errorLabel").css("display", "inline");
       } else if ($(this).val() != "") {
         $(this).css("border-color", "#ced4da");
       }
@@ -28,27 +28,36 @@ $(function () {
     let valid = true;
     let pw1 = $("#txtPassword").val();
     let pw2 = $("#txtConfirmPassword").val();
+    let passwordLength = $("#txtPassword").val().length;
+    let confirmPasswordLength = $("#txtConfirmPassword").val().length;
 
     $(".txtSignup").each(function () {
       if ($(this).val() == "") {
         valid = false;
         $(this).css("border-color", "red");
-        $("#errorLabel").css("display", "block");
+        $("#errorLabelSignUp").css("display", "block");
       } else if ($(this).val() != "") {
         $(this).css("border-color", "#ced4da");
       }
     });
 
-    if (pw1 != pw2) {
-      $("#errorLabel2").css("display", "block");
-      valid = false;
-    } else {
-      $("#errorLabel2").css("display", "none");
+    if (passwordLength != 0 && confirmPasswordLength != 0) {
+      if (pw1 != pw2) {
+        $("#errorLabel2").css("display", "block");
+      } else {
+        $("#errorLabel2").css("display", "none");
+      }
+    }
+    if (passwordLength != 0 && confirmPasswordLength != 0) {
+      if (passwordLength < 8 && confirmPasswordLength < 8) {
+        $("#errorPassword").css("display", "block");
+      } else {
+        $("#errorPassword").css("display", "none");
+      }
     }
 
     if (valid) {
-      $("#errorLabel").css("display", "none");
-      $("#errorLabel2").css("display", "none");
+      $("#errorLabelSignUp").css("display", "none");
     }
   });
 

@@ -80,7 +80,7 @@ body {
 
 #excellenceDiv {
   color: white;
-  background-image: url("../images/stairlift-01.png");
+  background-image: url("../assets/images/stairlift-01.png");
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -148,6 +148,13 @@ body {
   background: #fff;
 }
 
+#errorLabel {
+  display: none;
+  color: red;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+
 /* ----------- sign up div ------------ */
 
 .txtSignup {
@@ -170,7 +177,7 @@ body {
   font-size: small;
 }
 #signupPicture {
-  background-image: url("../images/acorn-stairlifts-home-survey.jpg");
+  background-image: url("../assets/images/acorn-stairlifts-home-survey.jpg");
   background-size: cover;
   opacity: 0.8;
 }
@@ -186,4 +193,23 @@ body {
 }
 #icons {
   text-align: center;
+}
+#signupFooter {
+  border-top: #8f023d 2px solid;
+  margin-bottom: 60px;
+}
+.awardsImg {
+  max-width: 300px;
+  width: 100%;
+}
+.divAwardsImg {
+  margin: auto;
+}
+#footerSignUp {
+  background-color: #8f023d;
+  height: 50px;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
