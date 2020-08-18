@@ -49,13 +49,15 @@
                     <div class="form-group">
                         <label for="txtConfirmPassword">Confirm Password</label>
                         <input type="password" class="form-control txtSignup txtPassword" id="txtConfirmPassword" />
-                        <small class="mt-2" id="errorLabelSignUp" style="display: none; color: red;">Please fill in all
+                        <small class="mt-2 errorMsg" id="errorLabelSignUp">Please fill in all
                             the
                             fields</small>
-                        <small class="mt-2" id="errorLabel2" style="display: none; color: red;">Passwords must match
+                        <small class="mt-2 errorMsg" id="errorLabel2">Passwords must match
                         </small>
-                        <small class="mt-2" id="errorPassword" style="display: none; color: red;">Password must be at
+                        <small class="mt-2 errorMsg" id="errorPassword">Password must be at
                             least 8 characters long
+                        </small>
+                        <small class="mt-2 successMsg" id="successMsg">Successfully signed up as a member
                         </small>
                     </div>
                     <button type="button" id="btnCancel" class="btn asBtn">

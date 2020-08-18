@@ -1,6 +1,8 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+a {
+}
 
 /* common classes */
 .asBtn {
@@ -23,6 +25,11 @@ body {
 #asLogo {
   margin-left: 20px;
   margin-top: 8px;
+}
+#asLogo2 {
+  display: none;
+  margin-top: 10px;
+  width: 80px;
 }
 
 #asHeader {
@@ -71,6 +78,11 @@ body {
   width: 25px;
 }
 
+.reviewBtn a {
+  text-decoration: none;
+  color: white;
+}
+
 /* ------------excellence div -------- */
 .asList {
   font-size: larger;
@@ -115,6 +127,11 @@ body {
   cursor: pointer;
   transform: scale(1.05);
 }
+a.linkSquare {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
 
 .squareTitles {
   margin-top: 10px;
@@ -154,6 +171,10 @@ body {
   padding-left: 20px;
   padding-bottom: 30px;
 }
+#successLabel {
+  display: none;
+  color: green;
+}
 
 /* ----------- sign up div ------------ */
 
@@ -184,7 +205,14 @@ body {
 #signupText {
   background-color: whitesmoke;
 }
-
+.errorMsg {
+  display: none;
+  color: red;
+}
+.successMsg {
+  color: green;
+  display: none;
+}
 /* ----------footer----- */
 #footer {
   background-color: #8f023d;
@@ -212,4 +240,26 @@ body {
   position: fixed;
   left: 0;
   bottom: 0;
+}
+
+@media only screen and (max-width: 660px) {
+  #asLogo2 {
+    display: block;
+    margin-top: 10px;
+    width: 80px;
+  }
+  #asLogo {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 620px) {
+  #asLogo2 {
+    display: none;
+    margin-top: 10px;
+    width: 80px;
+  }
+  #asLogo {
+    display: block;
+  }
 }

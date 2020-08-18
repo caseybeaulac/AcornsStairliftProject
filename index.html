@@ -26,16 +26,18 @@
 </head>
 
 <body>
+
   <!-- ------------- MY HEADER ------------ -->
   <div class="container-fluid" id="asHeader">
     <div class="row">
-      <div class="col-lg-6 col-sm-6">
+      <div class="col-lg-6 col-sm-6 col-2">
         <img src="./assets/images/acorn-stairlifts-logo2.png" alt="AS Logo" id="asLogo" />
+        <img src="./assets/images/acornslogo.png" alt="AS Logo" id="asLogo2" width="80" />
       </div>
-      <div class="col-lg-6 col-sm-6">
+      <div class="col-lg-6 col-sm-6 col-10">
 
         <button class="btn asBtn titleBtn" id="btnGetQuoted">
-          Get Quoted Now
+          Get Quoted
         </button>
         <button class="btn asBtn titleBtn" id="btnGoToSignUp">Sign Up</button>
 
@@ -102,8 +104,9 @@
           Now you know a little more about Acorn Stairlifts, call us today for
           a free quote.
         </p>
-        <button class="btn asBtn">
-          See What Our Customers Have to Say About Us
+        <button class="btn asBtn reviewBtn"><a href="https://www.acornstairlifts.com/about/acorn-stairlifts-reviews
+                  " target="_blank">
+            See What Our Customers Have to Say About Us</a>
         </button>
       </div>
 
@@ -160,18 +163,25 @@
   <div class="container-fluid" id="squaresDiv" style="background-color: whitesmoke;">
     <div class="row p-4">
       <div class="col"></div>
-      <div id="serviceDiv" class="col-lg-3 col-sm-12 squaresSubDiv m-3">
+
+      <a class="linkSquare squaresSubDiv col-lg-3 col-sm-12 m-3"
+        href="https://www.acornstairlifts.com/stairlift/stairlift-servicing" target="_blank">
         <h5 class="squareTitles">Servicing your Stairlift</h5>
-        <p><i class="fas fa-tools"></i></p>
-      </div>
-      <div id="reviewsDiv" class="col-lg-3 col-sm-12 squaresSubDiv m-3">
+        <p><i class="fas fa-tools pb-2"></i></p>
+      </a>
+
+      <a href="https://www.acornstairlifts.com/about/acorn-stairlifts-reviews" target="_blank" id="reviewsDiv"
+        class="col-lg-3 col-sm-12 linkSquare squaresSubDiv m-3">
         <h5 class="squareTitles">Testimonials & Reviews</h5>
-        <i class="fas fa-award"></i>
-      </div>
-      <div id="faqDiv" class="col-lg-3 col-sm-12 squaresSubDiv m-3">
+        <i class="fas fa-award pb-2"></i>
+      </a>
+
+      <a id="faqDiv" href="https://www.acornstairlifts.com/about/acorn-stairlifts-faq" target="_blank"
+        class="col-lg-3 col-sm-12 linkSquare squaresSubDiv m-3">
         <h5 class="squareTitles">FAQs</h5>
-        <i class="fas fa-question-circle"></i>
-      </div>
+        <i class="fas fa-question-circle pb-2"></i>
+      </a>
+
       <div class="col"></div>
 
     </div>
@@ -221,6 +231,8 @@
           </button><small id="errorLabel">Please fill
             in all the
             fields</small>
+          <small id="successLabel">Thank you for submitting your information, you will receive an email in the next
+            business day</small>
 
 
         </form>
